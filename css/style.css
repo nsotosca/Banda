@@ -1,0 +1,206 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#444444;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    /* background:#222 url("../images/bg.jpg") no-repeat center 0 fixed; */
+    background: #222 url("../images/bg.jpg") no-repeat center 0 fixed;
+    /* -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; */
+    margin:0 auto; 
+    /* min-width:900px !important; */
+    width: 100%;
+}
+/* header */
+header{height:calc(100vh - 60px);}
+nav{
+    position: absolute;
+    background: #222;
+    margin:0 auto; 
+    min-width: 100rem;
+    width: 100%;
+    height: 60px;
+}
+nav ol{
+    width: 850px;
+    text-align: center;
+    margin:0 auto;
+    padding: 0;
+}
+nav li{
+    list-style: none;
+    display:inline-block;
+    padding:5px;
+    margin:0 10px;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    height: 60px;
+}
+
+.sub-nav{
+    background: #333;
+    margin:0 auto; 
+    min-width: 100rem;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+	bottom: 60px;
+    left: 0;    
+    box-shadow: inset 0 -2px 6px black;
+    transition: opacity 0.5s linear;
+    opacity:0;
+    visibility: hidden;
+}
+
+.sub-nav li{
+    color:#ccc;
+    list-style: none;
+    display:inline-block;
+    padding:5px;
+    margin:0 2px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    height: 60px;
+}
+nav li a{text-decoration: none;}
+nav li a:hover{color:crimson;}
+nav li:hover + .sub-nav{
+    visibility: visible;    
+    opacity: 1;
+    /* transition: opacity 0.2s linear; */
+}
+.sub-nav:hover{visibility: visible; opacity: 1;}
+
+/* main */
+
+main{ 
+    background-color: rgba(0, 0,0, 0.5);
+    padding: 4rem 10rem;
+    min-width: 100rem;
+    width: 100%;
+}
+article{
+    background-color:#fafafa;
+    padding:5px 30px;
+    box-shadow: 5px 5px 20px #555;
+    margin-top:20px;
+}
+.slide{
+    margin-bottom:100vmin;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.column{ 
+    width: 23%;
+    margin: 0 1.5rem;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.column p{font-size: 2rem;}
+.cleaner{clear:both;}
+
+.foto{ width: 150px; height: 150px;overflow: hidden; border-radius: 50%; margin:0 auto;}
+.foto img{ width:15rem; height: 16rem;}
+h1,h2,h4, nav a{ 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    margin:0;
+}
+
+h4{color:crimson;font-size: 3.5em; margin:0;}
+
+.titulo{
+    color:crimson; 
+    font-size: 10em;
+    /* margin:20px 0 20px 0; */
+    text-shadow: 2px 2px 5px #222;
+}
+.subtitulo{
+    color:#333333; 
+    font-size: 4em;
+}
+.titulo, .subtitulo{text-align: center;}
+
+p{text-align: justify; font-size: 3rem;}
+
+#contact{
+    width: 500px;
+    margin:10px 0;
+    background-color:#222222;
+    padding: 10px 10px;
+}
+#contact form{overflow: hidden;}
+label {
+    float: left;
+    width: 200px;
+    padding-right: 24px;
+}
+ 
+input, select {
+    float: left;
+}
+.campo{
+    border:none;
+    width: 180px;
+    height: 30px;
+    margin-top:5px;
+    padding:5px;
+}
+.boton {
+    width: 130px;
+    height: 40px;
+    margin:0 5px 0 5px;
+    background-color: crimson;
+    border:crimson;
+    color:white;
+    text-transform: uppercase;
+}
+#contact form label{color:white; font-size: 1em; text-transform: uppercase;} 
+table{border-collapse: collapse; width: 100%; background: #222; color:crimson;border-color:#222}
+th, td {
+    border-bottom: 1px solid #333;
+    padding: 0px 20px;
+    text-align: left;
+    color: crimson;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.fila:hover {background-color: #f5f5f5;}
+.tapas{width: 150px; height: 150px; text-align: center;}
+
+/* footer */
+footer{height:70px;background-color: crimson; color:white; padding: 20px 20px; font-size: 2rem;}
+footer span, a{color:white;}
+
+article,#contact,.campo,.boton{border-radius: 10px;}
+.scroll-up a i{
+    font-size: 4rem;
+    position: absolute;
+    right: 1.064rem;
+    bottom: 10rem;
+    color: crimson;
+    background: #333;
+    border-radius: 50%;
+}
+
+.scroll-up{
+    position: fixed;
+    right: 0;
+    bottom:0;
+    display:block;
+}
+.nav li a:hover + .scroll-up{
+    display:none;
+}
+
+
