@@ -85,6 +85,7 @@ main{
     padding: 4rem 10rem;
     min-width: 100rem;
     width: 100%;
+    margin-top: 6rem;
 }
 article{
     background-color:#fafafa;
@@ -93,9 +94,10 @@ article{
     margin-top:20px;
 }
 .slide{
-    margin-bottom:100vmin;
+    min-height: 100vh;
     text-align: center;
-    padding: 4rem 0;
+    padding: 5rem 0;
+    /* margin-top: 10rem; */
 }
 
 .column{ 
