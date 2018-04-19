@@ -2,21 +2,28 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:#444444;
     box-sizing: border-box;
+    margin:0;
 }
 
 html{
     font-size: 62.5%;
+    background: url("../images/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
 }
 body{
-    /* background:#222 url("../images/bg.jpg") no-repeat center 0 fixed; */
+    /* background:#222 url("../images/bg.jpg") no-repeat center 0 fixed;
     background: #222 url("../images/bg.jpg") no-repeat center 0 fixed;
     /* -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover; */
+	background-size: cover;
     margin:0 auto; 
-    /* min-width:900px !important; */
-    width: 100%;
+    min-width:900px !important;
+    width: 100%; */
 }
 /* header */
 header{height:calc(100vh - 60px);}
@@ -206,3 +213,15 @@ article,#contact,.campo,.boton{border-radius: 10px;}
 }
 
 
+@media (min-width: 25em) {
+    body{
+        background-size:cover;
+    }
+	
+}
+
+@media (min-width: 60em) {
+    body{
+        background-size:cover;
+    }
+}
