@@ -52,23 +52,28 @@ ol {
   height: calc(100vh - 7rem); }
 
 main {
-  padding: 0.5rem;
+  width: 100%;
+  padding: 2rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 1rem #222; }
   main .slide {
+    width: 100%;
     height: auto;
-    margin-bottom: calc(100vh - 7rem);
-    padding-top: 1rem;
-    align-content: center;
-    align-items: center; }
+    margin-bottom: calc(50vh - 7rem);
+    padding-top: 1rem; }
     main .slide h1 {
+      width: 30rem;
+      margin: 2rem auto;
+      font-size: 5rem;
       color: crimson;
-      margin: 2rem 0;
-      background-color: #222;
-      width: 100%;
-      font-size: 5rem; }
+      background-color: #222; }
+    main .slide h2 {
+      color: #fafafa;
+      margin: 2rem 0; }
     main .slide p {
       text-align: justify;
       color: #ccc; }
@@ -99,12 +104,20 @@ main {
       width: 100%;
       height: auto; }
   #about .column h4 {
-    color: crimson;
     margin: 2rem 0;
+    color: crimson;
     background-color: #222; }
   #about .column p {
+    padding: 0 1rem;
     border-left: crimson dotted 0.1rem;
     border-right: crimson dotted 0.1rem; }
+
+footer {
+  height: calc(50vh - 7rem);
+  padding: 2rem;
+  background: #222;
+  color: crimson;
+  font-size: 1.6rem; }
 
 .stiky-bar {
   display: flex;
@@ -167,6 +180,12 @@ main {
     background-size: 100% auto; }
   main {
     padding: 5rem; }
+    main .slide {
+      width: 70%;
+      height: calc(100vh - 7rem); }
+      main .slide h1.h2 {
+        margin-top: 5rem;
+        margin-bottom: 5rem; }
   #home div {
     width: 20rem;
     height: 20rem; }
