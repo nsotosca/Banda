@@ -1,0 +1,111 @@
+.stiky-bar{
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    background-color:$primary-color;
+    .hamb-icon{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+        font-size:2rem;
+        color:$primary-color;
+        background-color:$third-color;
+        margin-left: 1rem;
+        border-radius: 0.3rem;
+    }
+    .logo{
+        width: 15rem;
+        height: auto;
+    }  
+    #hidden-button{
+        display:none;
+    }
+    nav{
+        position: fixed;
+        display: none;
+        top:0;
+        left:0;
+        z-index:1000;
+        background-color: $b-transparent;
+        height: calc(100vh - 7rem);
+        width: 100vw;
+        padding: 1rem;
+        ol{      
+            display:flex;  
+            flex-flow: row wrap;
+            a, label{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 48%;
+                height: 30%;
+                margin: 0.1rem;
+                padding: 0.5rem 0 0.5rem 0;
+                font-family: $title-font-family;
+                font-size: 1.5rem;
+                color:$primary-color;
+                background-color:$third-color;
+                text-transform: uppercase; 
+                li{
+                    text-align: center;
+                    .icon{
+                        font-size: 3rem;
+                        width: 100%;
+                    }
+                } 
+            }       
+        }
+    }
+    #hidden-button:checked + nav {
+        display: block;
+    }
+}
+
+@media (min-width: 25em) {
+	html{
+        background:$bg-desktop;
+        background-size:100% auto;
+    }
+    main{
+        padding: 5rem;
+    }
+    #home{
+        div{
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+    #about{
+        .integrantes{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas: "image1 image2 image3 image4";
+            .column{
+                .foto{
+                    width: 20rem;
+                    height: 20rem;           
+                }
+                &:nth-child(1){
+                    grid-area:image1;
+                }
+                &:nth-child(2){
+                    grid-area:image2;
+                }
+                &:nth-child(3){
+                    grid-area:image3;
+                }
+                &:nth-child(4){
+                    grid-area:image4;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+@media (min-width: 60em) {
+	
+}

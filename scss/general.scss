@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 14px;
+	font-size: 62.5%;
+	font-family: sans-serif;
+	background: $bg-mobile;
+	background-size:100% auto;
+}
+
+body {
+	font-size: 14px;
+	font-size: 1.6rem;
+}
+h1,h2,h3,h4{
+	font-family: $title-font-family;
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	color: #fbfbfb;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h4 {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.cleaner {
+	clear: both;
+}
+
+.wrapper {
+    height: calc(100vh - 7rem);
+	overflow-y: scroll;
+}
+li{
+	list-style: none;
+}
+ol{padding: 0; margin:0;}
+
+.bolder{
+	font-weight: bold;
+}
