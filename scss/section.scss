@@ -6,37 +6,42 @@ main{
     justify-content: center;
     align-items: center;
     background: $b-transparent;
-    box-shadow: 0 0 1rem #222;    
+    box-shadow: $sombra;    
     .slide{
         width: 100%;
         height:auto;
         margin-bottom: calc(50vh - 7rem);
         padding-top:1rem;
         h1{
-            width: 30rem;
-            margin:2rem auto;
+            margin:5rem auto;
             font-size: 5rem;
             color:$primary-color;
             background-color:$third-color;
+            text-shadow: 0 0.1rem 0 red;
+            box-shadow: $sombra;
         }
         h2{
-            color:$secundary-color;
             margin:2rem 0;
+            font-weight: 100;
+            color:$secundary-color;
+            text-shadow:$sombra;
         }
         p{
+            margin:1rem 0 1rem 0; 
             text-align: justify;
             color:#ccc;
+            text-shadow: 0 0.2rem 0 #000;
         }
     }
 }
 
 #home{
     div{
-        width: 10rem;
-        height: 10rem;
+        width: 15rem;
+        height: 15rem;
         margin:auto;
         margin-bottom:1rem;
-        box-shadow: 0 0 1rem #222;
+        box-shadow: $sombra;
         border-radius: 50%;
         img{
             width: 100%;
@@ -57,11 +62,6 @@ main{
             border-radius: 50%;
             border:$primary-color 0.5rem solid;
             overflow: hidden;
-            img{
-                width:100%;
-                height: auto;
-            }
-
         }
         h4{
             margin:2rem 0;
@@ -75,4 +75,51 @@ main{
         }
     }
 
+}
+
+#discography{
+    table,tbody,thead,th,tr,td{
+        border:none;
+    }
+    table{
+        width: 100%;
+        border-spacing: 0.03rem;
+        font-size: 1.3rem;
+        box-shadow: $sombra;
+        thead{
+            text-transform: uppercase;
+        }
+        thead,tbody{
+            tr{
+                td,th{                    
+                    text-align: center;
+                    padding: 1.3rem;
+                    .disco{
+                        width: 4rem;
+                        height: auto;
+                        margin: auto;
+                        cursor: pointer;
+                    }
+                }
+                &:nth-child(odd){
+                    background:#222;
+                    color:$primary-color;
+                }
+                &:nth-child(even){
+                    background: #111;
+                    color:$primary-color;
+                }
+                &:hover{
+                    background:$primary-color;
+                    color:$third-color;
+                }   
+            }             
+        }
+        thead{
+            tr:nth-child(1){
+                background:$primary-color;
+                color:$third-color;
+            }
+        }
+    }
 }
