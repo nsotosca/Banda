@@ -70,6 +70,15 @@
     }
     main{
         padding: 5rem;
+        .slide{
+            width: 70%;
+            height: calc(100vh - 7rem);
+            h1.h2{
+                margin-top:5rem;
+                margin-bottom:5rem;  
+            }
+
+        }
     }
     #home{
         div{

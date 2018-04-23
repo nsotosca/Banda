@@ -8,10 +8,18 @@
     "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Nahuel Sotosca",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.8.3",
     "nodemon": "^1.17.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsotosca/Banda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nsotosca/Banda/issues"
+  },
+  "homepage": "https://github.com/nsotosca/Banda#readme"
 }
