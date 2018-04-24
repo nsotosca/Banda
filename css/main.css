@@ -17,10 +17,13 @@ h1, h2, h3, h4 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-transform: uppercase; }
 
+h2, h3, h4 {
+  font-weight: 200; }
+
 h1 {
   font-size: 24px;
   font-size: 2.4rem;
-  color: #fbfbfb;
+  color: crimson;
   text-align: center; }
 
 a {
@@ -29,7 +32,7 @@ a {
 
 h4 {
   font-size: 18px;
-  font-size: 1.8rem; }
+  font-size: 2rem; }
 
 .cleaner {
   clear: both; }
@@ -70,22 +73,22 @@ main {
     margin-bottom: calc(50vh - 7rem);
     padding-top: 1rem; }
     main .slide h1 {
-      margin: 5rem auto;
+      margin: 3rem auto;
       font-size: 5rem;
       color: crimson;
       background-color: #222;
       text-shadow: 0 0.1rem 0 red;
       box-shadow: 0 0 1rem #000; }
     main .slide h2 {
-      margin: 2rem 0;
-      font-weight: 100;
+      margin: 1rem 0;
       color: #ccc;
       text-shadow: 0 0 1rem #000; }
     main .slide p {
       margin: 1rem 0 1rem 0;
+      font-size: 1.6rem;
       text-align: justify;
       color: #ccc;
-      text-shadow: 0 0.2rem 0 #000; }
+      text-shadow: 0 0.1rem 0 #000; }
 
 #home div {
   width: 15rem;
@@ -99,7 +102,7 @@ main {
     height: auto; }
 
 #about .column {
-  padding: 3rem;
+  padding: 1rem;
   text-align: center; }
   #about .column .foto {
     width: 15rem;
@@ -114,6 +117,7 @@ main {
     color: crimson;
     background-color: #222; }
   #about .column p {
+    font-size: 1.2rem;
     padding: 0 1rem;
     border-left: crimson dotted 0.1rem;
     border-right: crimson dotted 0.1rem; }
@@ -130,7 +134,7 @@ main {
     text-transform: uppercase; }
   #discography table thead tr td, #discography table thead tr th, #discography table tbody tr td, #discography table tbody tr th {
     text-align: center;
-    padding: 1.3rem; }
+    padding: 1rem; }
     #discography table thead tr td .disco, #discography table thead tr th .disco, #discography table tbody tr td .disco, #discography table tbody tr th .disco {
       width: 4rem;
       height: auto;
@@ -161,7 +165,7 @@ footer {
   align-items: center;
   height: 7rem;
   background-color: crimson; }
-  .stiky-bar .hamb-icon {
+  .stiky-bar .ham-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,7 +178,8 @@ footer {
     border-radius: 0.3rem; }
   .stiky-bar .logo {
     width: 15rem;
-    height: auto; }
+    height: auto;
+    margin-top: 0.4rem; }
   .stiky-bar #hidden-button {
     display: none; }
   .stiky-bar nav {
@@ -194,7 +199,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 48%;
+        width: 49%;
         height: 30%;
         margin: 0.1rem;
         padding: 0.5rem 0 0.5rem 0;
@@ -214,31 +219,93 @@ footer {
 @media (min-width: 25em) {
   html {
     background: url("../img/bg.jpg") no-repeat center 0 fixed;
-    background-size: 100% auto; }
+    background-size: cover; }
   main {
-    padding: 5rem; }
+    padding: 3rem; }
     main .slide {
-      width: 70%;
-      height: calc(100vh - 7rem); }
-      main .slide h1.h2 {
-        margin-top: 5rem;
-        margin-bottom: 5rem; }
+      height: auto; }
   #home div {
-    width: 30rem;
-    height: 30rem;
+    width: 15rem;
+    height: 15rem;
     margin: 5rem auto; }
   #about .integrantes {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "image1 image2" "image3 image4"; }
+    #about .integrantes .column {
+      padding: 0.5rem; }
+      #about .integrantes .column .foto {
+        width: 10rem;
+        height: auto; }
+      #about .integrantes .column:nth-child(1) {
+        grid-area: image1; }
+      #about .integrantes .column:nth-child(2) {
+        grid-area: image2; }
+      #about .integrantes .column:nth-child(3) {
+        grid-area: image3; }
+      #about .integrantes .column:nth-child(4) {
+        grid-area: image4; }
+  .stiky-bar {
+    justify-content: center; }
+    .stiky-bar .ham-icon {
+      display: none; }
+    .stiky-bar .logo {
+      width: 9rem; }
+    .stiky-bar nav {
+      width: auto;
+      height: 7rem;
+      margin: 0;
+      display: block;
+      position: inherit;
+      background: none; }
+      .stiky-bar nav ol a, .stiky-bar nav ol label {
+        width: auto;
+        height: 5rem;
+        margin: 0 0.3rem;
+        padding: 0;
+        font-size: 1.3rem;
+        color: #222;
+        background-color: crimson; }
+        .stiky-bar nav ol a li, .stiky-bar nav ol label li {
+          text-align: center; }
+          .stiky-bar nav ol a li .icon, .stiky-bar nav ol label li .icon {
+            display: none; }
+      .stiky-bar nav ol label {
+        display: none; }
+    .stiky-bar #hidden-button:checked + nav {
+      display: block; } }
+
+@media (min-width: 60em) {
+  main {
+    padding: 10rem; }
+  #about .integrantes {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "image1 image2 image3 image4"; }
     #about .integrantes .column .foto {
-      width: 20rem;
-      height: 20rem; }
-    #about .integrantes .column:nth-child(1) {
-      grid-area: image1; }
-    #about .integrantes .column:nth-child(2) {
-      grid-area: image2; }
-    #about .integrantes .column:nth-child(3) {
-      grid-area: image3; }
-    #about .integrantes .column:nth-child(4) {
-      grid-area: image4; } }
+      width: 15rem;
+      height: auto; }
+  .stiky-bar {
+    justify-content: center; }
+    .stiky-bar .ham-icon {
+      display: none; }
+    .stiky-bar .logo {
+      width: 15rem; }
+    .stiky-bar nav {
+      width: auto;
+      height: 7rem;
+      margin: 0;
+      display: block;
+      position: inherit;
+      background: none; }
+      .stiky-bar nav ol a, .stiky-bar nav ol label {
+        margin: 0 1.5rem;
+        padding: 0.5rem 0 0.5rem 0;
+        font-size: 2.5rem; }
+        .stiky-bar nav ol a li, .stiky-bar nav ol label li {
+          text-align: center; }
+          .stiky-bar nav ol a li .icon, .stiky-bar nav ol label li .icon {
+            display: none; }
+      .stiky-bar nav ol label {
+        display: none; }
+    .stiky-bar #hidden-button:checked + nav {
+      display: block; } }

@@ -3,7 +3,7 @@
     align-items: center;
     height: 7rem;
     background-color:$primary-color;
-    .hamb-icon{
+    .ham-icon{
         display:flex;
         align-items: center;
         justify-content: center;
@@ -18,6 +18,7 @@
     .logo{
         width: 15rem;
         height: auto;
+        margin-top:0.4rem;
     }  
     #hidden-button{
         display:none;
@@ -39,7 +40,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 48%;
+                width: 49%;
                 height: 30%;
                 margin: 0.1rem;
                 padding: 0.5rem 0 0.5rem 0;
@@ -63,39 +64,34 @@
     }
 }
 
-@media (min-width: 25em) {
+@media (min-width: 25em){
 	html{
         background:$bg-desktop;
-        background-size:100% auto;
+        background-size: cover;
     }
     main{
-        padding: 5rem;
+        padding: 3rem;
         .slide{
-            width: 70%;
-            height: calc(100vh - 7rem);
-            h1.h2{
-                margin-top:5rem;
-                margin-bottom:5rem;  
-            }
-
+            height: auto;
         }
     }
     #home{
         div{
-            width: 30rem;
-            height: 30rem;
+            width: 15rem;
+            height: 15rem;
             margin:5rem auto;
         }
     }
     #about{
         .integrantes{
             display: grid;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-areas: "image1 image2 image3 image4";
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas:"image1 image2""image3 image4";
             .column{
+                padding:0.5rem;
                 .foto{
-                    width: 20rem;
-                    height: 20rem;           
+                    width: 10rem;
+                    height: auto;           
                 }
                 &:nth-child(1){
                     grid-area:image1;
@@ -110,12 +106,93 @@
                     grid-area:image4;
                 }
             }
+        }      
+    }
+    .stiky-bar{
+        justify-content: center;
+        .ham-icon{display:none;}
+        .logo{width: 9rem;}  
+        nav{
+            width: auto;
+            height: 7rem;
+            margin:0;
+            display: block;
+            position:inherit;
+            background: none;
+            ol{      
+                a,label{
+                    width: auto;
+                    height: 5rem;
+                    margin: 0 0.3rem;
+                    padding: 0;
+                    font-size: 1.3rem;
+                    color:$third-color;
+                    background-color:$primary-color;
+                    li{
+                        text-align: center;
+                        .icon{
+                            display:none;
+                        }
+                    } 
+                }    
+                label{display: none;} 
+            }
         }
-        
-        
+        #hidden-button:checked + nav {
+            display: block;
+        }
     }
 }
 
-@media (min-width: 60em) {
-	
+@media (min-width: 60em){
+	html{
+        // background-size:100% auto;
+    }
+    main{
+        padding: 10rem;
+    }
+    #about{
+        .integrantes{
+            grid-template-columns: repeat(4,1fr);
+            grid-template-areas:"image1 image2 image3 image4";
+            .column{
+                .foto{
+                    width: 15rem;
+                    height: auto;           
+                }
+            }
+        }      
+    }
+    .stiky-bar{
+        justify-content: center;
+        .ham-icon{
+            display:none;
+        }
+        .logo{width: 15rem;}
+        nav{
+            width: auto;
+            height: 7rem;
+            margin:0;
+            display: block;
+            position:inherit;
+            background: none;
+            ol{      
+                a,label{
+                    margin: 0 1.5rem;
+                    padding: 0.5rem 0 0.5rem 0;
+                    font-size: 2.5rem;
+                    li{
+                        text-align: center;
+                        .icon{
+                            display:none;
+                        }
+                    } 
+                }    
+                label{display: none;} 
+            }
+        }
+        #hidden-button:checked + nav {
+            display: block;
+        }
+    }
 }
