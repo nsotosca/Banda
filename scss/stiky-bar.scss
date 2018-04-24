@@ -153,6 +153,13 @@
     main{
         padding: 10rem;
     }
+    #home{
+        div{
+            width: 25rem;
+            height: 25rem;
+            margin:5rem auto;
+        }
+    }
     #about{
         .integrantes{
             grid-template-columns: repeat(4,1fr);

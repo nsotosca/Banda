@@ -280,6 +280,10 @@ footer {
     height: calc(100vh - 7rem); }
   main {
     padding: 10rem; }
+  #home div {
+    width: 25rem;
+    height: 25rem;
+    margin: 5rem auto; }
   #about .integrantes {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "image1 image2 image3 image4"; }
