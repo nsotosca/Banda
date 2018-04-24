@@ -146,7 +146,7 @@
 
 @media (min-width: 60em){
     .wrapper {
-        height: calc(100vh - 7rem);
+        height: calc(100% - 7rem);
     }
     main{
         padding: 10rem;
@@ -165,13 +165,14 @@
     }
     .stiky-bar{
         justify-content: center;
+        height: 7rem;
         .ham-icon{
             display:none;
         }
         .logo{width: 15rem;}
         nav{
             width: auto;
-            height: 7rem;
+            height: 100%;
             margin:0;
             display: block;
             position:inherit;

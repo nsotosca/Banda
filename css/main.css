@@ -11,7 +11,9 @@ html {
 
 body {
   font-size: 14px;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh; }
 
 h1, h2, h3, h4 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -38,7 +40,7 @@ h4 {
   clear: both; }
 
 .wrapper {
-  height: calc(100vh - 12rem);
+  height: calc(100% - 7rem);
   overflow-y: scroll; }
 
 li {
@@ -277,7 +279,7 @@ footer {
 
 @media (min-width: 60em) {
   .wrapper {
-    height: calc(100vh - 7rem); }
+    height: calc(100% - 7rem); }
   main {
     padding: 10rem; }
   #about .integrantes {
@@ -287,14 +289,15 @@ footer {
       width: 15rem;
       height: auto; }
   .stiky-bar {
-    justify-content: center; }
+    justify-content: center;
+    height: 7rem; }
     .stiky-bar .ham-icon {
       display: none; }
     .stiky-bar .logo {
       width: 15rem; }
     .stiky-bar nav {
       width: auto;
-      height: 7rem;
+      height: 100%;
       margin: 0;
       display: block;
       position: inherit;
