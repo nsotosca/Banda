@@ -30,7 +30,7 @@
         left:0;
         z-index:1000;
         background-color: $b-transparent;
-        height: calc(100vh - 7rem);
+        height: calc(100vh - 12rem);
         width: 100vw;
         padding: 1rem;
         ol{      
@@ -60,9 +60,11 @@
         }
     }
     #hidden-button:checked + nav {
-        display: block;
+        display: flex;
     }
 }
+
+//Adaptación a Laptop y tablet
 
 @media (min-width: 25em){
 	html{

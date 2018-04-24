@@ -74,7 +74,7 @@ main {
     padding-top: 1rem; }
     main .slide h1 {
       margin: 3rem auto;
-      font-size: 5rem;
+      font-size: 4rem;
       color: crimson;
       background-color: #222;
       text-shadow: 0 0.1rem 0 red;
@@ -189,7 +189,7 @@ footer {
     left: 0;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.8);
-    height: calc(100vh - 7rem);
+    height: calc(100vh - 12rem);
     width: 100vw;
     padding: 1rem; }
     .stiky-bar nav ol {
@@ -214,7 +214,7 @@ footer {
             font-size: 3rem;
             width: 100%; }
   .stiky-bar #hidden-button:checked + nav {
-    display: block; }
+    display: flex; }
 
 @media (min-width: 25em) {
   html {
