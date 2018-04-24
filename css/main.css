@@ -276,6 +276,8 @@ footer {
       display: block; } }
 
 @media (min-width: 60em) {
+  .wrapper {
+    height: calc(100vh - 7rem); }
   main {
     padding: 10rem; }
   #about .integrantes {
