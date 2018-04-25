@@ -1,4 +1,7 @@
 .wrapper{
+    height: calc(100% - 7rem);
+    overflow-y: scroll;
+    background: $b-transparent;
     header{
         height: calc(100vh - 7rem);
         display: none;

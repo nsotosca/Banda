@@ -53,14 +53,13 @@ img {
   width: 100%;
   height: auto; }
 
-.wrapper header {
-  height: calc(100vh - 7rem);
-  display: none; }
-
 .wrapper {
   height: calc(100% - 7rem);
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.8); }
+  .wrapper header {
+    height: calc(100vh - 7rem);
+    display: none; }
 
 main {
   display: none;
