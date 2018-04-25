@@ -62,6 +62,7 @@ img {
   background: rgba(0, 0, 0, 0.8); }
 
 main {
+  display: none;
   width: 100%;
   padding: 0 2rem; }
   main .slide {
