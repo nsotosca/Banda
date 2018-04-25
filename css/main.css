@@ -59,16 +59,16 @@ img {
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.8); }
   .wrapper header {
-    height: calc(100vh - 7rem);
-    display: none; }
+    height: calc(100vh - 7rem); }
 
 main {
-  display: none;
   width: 100%;
   padding: 0 2rem; }
   main .slide {
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin-bottom: calc(50vh - 7rem);
+    padding-top: 5%; }
     main .slide h1 {
       margin: 3rem auto;
       font-size: 4rem;
@@ -155,8 +155,7 @@ footer {
   padding: 2rem;
   background: #222;
   color: crimson;
-  font-size: 1.6rem;
-  display: none; }
+  font-size: 1.6rem; }
 
 .stiky-bar {
   position: fixed;
@@ -166,7 +165,7 @@ footer {
   width: 100%;
   background-color: crimson; }
   .stiky-bar nav {
-    display: none;
+    display: flex;
     height: 7rem;
     width: 100%;
     flex-flow: wrap;
