@@ -39,10 +39,6 @@ h4 {
 .cleaner {
   clear: both; }
 
-.wrapper {
-  height: calc(100% - 7rem);
-  overflow-y: scroll; }
-
 li {
   list-style: none; }
 
@@ -60,13 +56,14 @@ img {
 .wrapper header {
   height: calc(100vh - 7rem); }
 
+.wrapper {
+  height: calc(100% - 7rem);
+  overflow-y: scroll;
+  background: rgba(0, 0, 0, 0.8); }
+
 main {
   width: 100%;
-  padding: 2rem;
-  display: flex;
-  flex-flow: wrap;
-  background: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 1rem #000; }
+  padding: 0 2rem; }
   main .slide {
     width: 100%;
     height: auto;
@@ -222,7 +219,7 @@ footer {
     background: url("../img/bg.jpg") no-repeat center 0 fixed;
     background-size: cover; }
   main {
-    padding: 3rem; }
+    padding: 0 3rem; }
     main .slide {
       height: auto; }
   #home div {
@@ -279,7 +276,7 @@ footer {
   .wrapper {
     height: calc(100% - 7rem); }
   main {
-    padding: 10rem; }
+    padding: 0 10rem; }
   #home div {
     width: 25rem;
     height: 25rem;
