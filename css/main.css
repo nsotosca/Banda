@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin:100,400,700,900|Montserrat");
 * {
   margin: 0;
   box-sizing: border-box; }
@@ -16,17 +17,18 @@ body {
   background-size: 100% auto; }
 
 h1, h2, h3, h4 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
   text-transform: uppercase; }
-
-h2, h3, h4 {
-  font-weight: 200; }
 
 h1 {
   font-size: 24px;
   font-size: 2.4rem;
+  font-weight: 900;
   color: crimson;
   text-align: center; }
+
+h2, h3, h4 {
+  font-weight: 400; }
 
 a {
   text-decoration: none;
@@ -67,22 +69,25 @@ main {
   main .slide {
     width: 100%;
     height: auto;
-    margin-bottom: calc(50vh - 7rem);
+    margin-bottom: 100%;
     padding-top: 5%; }
     main .slide h1 {
       margin: 3rem auto;
       font-size: 4rem;
-      color: crimson;
-      background-color: #222;
       text-shadow: 0 0.1rem 0 red;
-      box-shadow: 0 0 1rem #000; }
+      letter-spacing: -0.27rem;
+      box-shadow: 0 0 1rem #000;
+      color: crimson;
+      background-color: #222; }
     main .slide h2 {
+      font-size: 2rem;
       margin: 1rem 0;
       color: #ccc;
       text-shadow: 0 0 1rem #000; }
     main .slide p {
       margin: 1rem 0 1rem 0;
       font-size: 1.6rem;
+      font-family: "Montserrat", sans-serif;
       text-align: justify;
       color: #ccc;
       text-shadow: 0 0.1rem 0 #000; }
@@ -105,7 +110,7 @@ main {
     width: 15rem;
     height: 15rem;
     margin: auto;
-    box-shadow: 0 0 3rem #000;
+    box-shadow: inset 0 0 2rem 1rem #000;
     border-radius: 50%;
     border: crimson 0.5rem solid;
     overflow: hidden; }
@@ -200,9 +205,10 @@ footer {
         width: 49%;
         height: auto;
         margin: 0.1rem;
-        padding: 0.5rem 0 0.5rem 0;
-        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-family: "Libre Franklin", sans-serif;
         font-size: 1.5rem;
+        font-weight: 700;
+        text-shadow: 0 0.1rem 0 red;
         color: crimson;
         background-color: #222;
         text-transform: uppercase; }
@@ -256,17 +262,20 @@ footer {
     align-items: center;
     background: none; }
     .stiky-bar nav ol a, .stiky-bar nav ol label {
+      height: 7rem;
       width: auto;
-      height: 5rem;
-      margin: 0 0.3rem;
-      padding: 0;
+      padding: 0.5rem 1rem 0.5rem 1rem;
       font-size: 1.3rem;
+      font-weight: 900;
       color: #222;
       background-color: crimson; }
       .stiky-bar nav ol a li, .stiky-bar nav ol label li {
         text-align: center; }
         .stiky-bar nav ol a li .icon, .stiky-bar nav ol label li .icon {
           display: none; }
+      .stiky-bar nav ol a:hover, .stiky-bar nav ol label:hover {
+        color: crimson;
+        background: #222; }
     .stiky-bar nav ol label {
       display: none; }
   .stiky-bar #hidden-button:checked + nav {
@@ -292,9 +301,7 @@ footer {
   .stiky-bar nav .logo {
     width: 15rem; }
   .stiky-bar nav ol a, .stiky-bar nav ol label {
-    margin: 0 1.5rem;
-    padding: 0.5rem 0 0.5rem 0;
-    font-size: 2.5rem; }
+    font-size: 1.9rem; }
     .stiky-bar nav ol a li, .stiky-bar nav ol label li {
       text-align: center; }
       .stiky-bar nav ol a li .icon, .stiky-bar nav ol label li .icon {

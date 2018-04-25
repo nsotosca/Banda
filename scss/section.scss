@@ -3,18 +3,20 @@ main{
     padding: 0 2rem;
     .slide{
         width: 100%;
-        height:auto;
-        margin-bottom: calc(50vh - 7rem);
-        padding-top:5%;
+        height: auto;
+        margin-bottom: 100%;
+        padding-top: 5%;
         h1{
             margin:3rem auto;
             font-size: 4rem;
+            text-shadow: 0 0.1rem 0 red;
+            letter-spacing: -0.27rem;
+            box-shadow: $sombra;
             color:$primary-color;
             background-color:$third-color;
-            text-shadow: 0 0.1rem 0 red;
-            box-shadow: $sombra;
-        }
+        }         
         h2{
+            font-size: 2rem;
             margin:1rem 0;
             color:$secundary-color;
             text-shadow:$sombra;
@@ -22,6 +24,7 @@ main{
         p{
             margin:1rem 0 1rem 0; 
             font-size: 1.6rem;
+            font-family: $text-font-family;
             text-align: justify;
             color:#ccc;
             text-shadow: 0 0.1rem 0 #000;
@@ -52,7 +55,7 @@ main{
             width: 15rem;
             height: 15rem;
             margin:auto;
-            box-shadow:0 0 3rem #000;
+            box-shadow:inset 0 0 2rem 1rem #000;
             border-radius: 50%;
             border:$primary-color 0.5rem solid;
             overflow: hidden;

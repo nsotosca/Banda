@@ -55,11 +55,11 @@
                 align-items: center;     
                 background: none;           
                 a,label{
+                    height: 7rem;
                     width: auto;
-                    height: 5rem;
-                    margin: 0 0.3rem;
-                    padding: 0;
+                    padding: 0.5rem 1rem 0.5rem 1rem;
                     font-size: 1.3rem;
+                    font-weight: 900;
                     color:$third-color;
                     background-color:$primary-color;
                     li{
@@ -68,6 +68,10 @@
                             display:none;
                         }
                     } 
+                    &:hover{
+                        color:$primary-color;
+                        background: $third-color;
+                    }
                 }    
                 label{display: none;} 
             }
@@ -112,9 +116,7 @@
             .logo{width: 15rem;}
             ol{      
                 a,label{
-                    margin: 0 1.5rem;
-                    padding: 0.5rem 0 0.5rem 0;
-                    font-size: 2.5rem;
+                    font-size: 1.9rem;
                     li{
                         text-align: center;
                         .icon{

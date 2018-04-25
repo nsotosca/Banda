@@ -44,9 +44,10 @@
                 width: 49%;
                 height: auto;
                 margin: 0.1rem;
-                padding: 0.5rem 0 0.5rem 0;
                 font-family: $title-font-family;
                 font-size: 1.5rem;
+                font-weight: 700;
+                text-shadow: 0 0.1rem 0 red;
                 color:$primary-color;
                 background-color:$third-color;
                 text-transform: uppercase; 
