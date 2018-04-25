@@ -66,9 +66,7 @@ main {
   padding: 0 2rem; }
   main .slide {
     width: 100%;
-    height: auto;
-    margin-bottom: calc(50vh - 7rem);
-    padding-top: 5%; }
+    height: auto; }
     main .slide h1 {
       margin: 3rem auto;
       font-size: 4rem;
@@ -165,7 +163,7 @@ footer {
   width: 100%;
   background-color: crimson; }
   .stiky-bar nav {
-    display: flex;
+    display: none;
     height: 7rem;
     width: 100%;
     flex-flow: wrap;
