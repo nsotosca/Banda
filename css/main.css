@@ -156,8 +156,8 @@ main {
     color: #222; }
 
 footer {
-  height: 12rem;
-  padding: 2rem;
+  height: 16rem;
+  padding: 2rem 2rem 0 2rem;
   background: #222;
   color: crimson;
   font-size: 1.6rem; }
