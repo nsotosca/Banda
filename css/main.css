@@ -215,7 +215,7 @@ footer {
     display: flex; }
 
 @media (min-width: 25em) {
-  html {
+  body {
     background: url("../img/bg.jpg") no-repeat center 0 fixed;
     background-size: cover; }
   main {
