@@ -1,47 +1,48 @@
 .stiky-bar{
-    display: flex;
-    align-items: center;
+    display: fixed;
+    bottom:0;
+    left:0;
     height: 7rem;
+    width: 100%;
     background-color:$primary-color;
-    .ham-icon{
-        display:flex;
+    nav{
+        display: flex;
+        height: 7rem;
+        width: 100%;
+        flex-flow: wrap;
         align-items: center;
         justify-content: center;
-        width: 3rem;
-        height: 3rem;
-        font-size:2rem;
-        color:$primary-color;
-        background-color:$third-color;
-        margin-left: 1rem;
-        border-radius: 0.3rem;
-    }
-    .logo{
-        width: 15rem;
-        height: auto;
-        margin-top:0.4rem;
-    }  
-    #hidden-button{
-        display:none;
-    }
-    nav{
-        position: fixed;
-        display: none;
-        top:0;
-        left:0;
-        z-index:1000;
-        background-color: $b-transparent;
-        height: calc(100vh - 12rem);
-        width: 100vw;
-        padding: 1rem;
-        ol{      
-            display:flex;  
+        .ham-icon{
+            font-size:2rem;
+            color:$primary-color;
+            background-color:$third-color;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.3rem;
+        }
+        .logo{
+            width: 15rem;
+            height: auto;
+            margin-top:0.4rem;
+        }  
+        #hidden-button{
+            display:none;
+        }
+        ol{ 
+            position: fixed;
+            top:0;
+            left: 0; 
+            height:100%;
+            width: 100%;
+            padding: 1rem;
+            display: none;    
             flex-flow: row wrap;
-            a, label{
+            background-color: $b-transparent;
+                a, label{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 49%;
-                height: 30%;
+                height: auto;
                 margin: 0.1rem;
                 padding: 0.5rem 0 0.5rem 0;
                 font-family: $title-font-family;
@@ -59,150 +60,7 @@
             }       
         }
     }
-    #hidden-button:checked + nav {
+    #hidden-button:checked + ol {
         display: flex;
-    }
-}
-
-//Adaptación a Laptop y tablet
-
-@media (min-width: 25em){
-	html{
-        background:$bg-desktop;
-        background-size: cover;
-    }
-    main{
-        padding: 3rem;
-        .slide{
-            height: auto;
-        }
-    }
-    #home{
-        div{
-            width: 15rem;
-            height: 15rem;
-            margin:5rem auto;
-        }
-    }
-    #about{
-        .integrantes{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-areas:"image1 image2""image3 image4";
-            .column{
-                padding:0.5rem;
-                .foto{
-                    width: 10rem;
-                    height: auto;           
-                }
-                &:nth-child(1){
-                    grid-area:image1;
-                }
-                &:nth-child(2){
-                    grid-area:image2;
-                }
-                &:nth-child(3){
-                    grid-area:image3;
-                }
-                &:nth-child(4){
-                    grid-area:image4;
-                }
-            }
-        }      
-    }
-    .stiky-bar{
-        justify-content: center;
-        .ham-icon{display:none;}
-        .logo{width: 9rem;}  
-        nav{
-            width: auto;
-            height: 7rem;
-            margin:0;
-            display: block;
-            position:inherit;
-            background: none;
-            ol{      
-                a,label{
-                    width: auto;
-                    height: 5rem;
-                    margin: 0 0.3rem;
-                    padding: 0;
-                    font-size: 1.3rem;
-                    color:$third-color;
-                    background-color:$primary-color;
-                    li{
-                        text-align: center;
-                        .icon{
-                            display:none;
-                        }
-                    } 
-                }    
-                label{display: none;} 
-            }
-        }
-        #hidden-button:checked + nav {
-            display: block;
-        }
-    }
-}
-
-@media (min-width: 60em){
-    .wrapper {
-        height: calc(100% - 7rem);
-    }
-    main{
-        padding: 10rem;
-    }
-    #home{
-        div{
-            width: 25rem;
-            height: 25rem;
-            margin:5rem auto;
-        }
-    }
-    #about{
-        .integrantes{
-            grid-template-columns: repeat(4,1fr);
-            grid-template-areas:"image1 image2 image3 image4";
-            .column{
-                .foto{
-                    width: 15rem;
-                    height: auto;           
-                }
-            }
-        }      
-    }
-    .stiky-bar{
-        justify-content: center;
-        height: 7rem;
-        .ham-icon{
-            display:none;
-        }
-        .logo{width: 15rem;}
-        nav{
-            width: auto;
-            height: 100%;
-            margin:0;
-            display: block;
-            position:inherit;
-            background: none;
-            ol{      
-                a,label{
-                    margin: 0 1.5rem;
-                    padding: 0.5rem 0 0.5rem 0;
-                    font-size: 2.5rem;
-                    li{
-                        text-align: center;
-                        .icon{
-                            display:none;
-                        }
-                    } 
-                }    
-                label{display: none;} 
-            }
-        }
-        #hidden-button:checked + nav {
-            display: block;
-        }
     }
 }
