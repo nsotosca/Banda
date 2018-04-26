@@ -1,9 +1,9 @@
 .wrapper{
-    height: 100vh;
+    height: calc(100vh - 6.99rem);
     width: 100%;
     overflow-y: scroll;
     background: $b-transparent;
     header{
-        height: calc(100vh - 7rem);
+        height: calc(100vh - 6.99rem);
     }
 }

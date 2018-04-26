@@ -56,21 +56,31 @@ img {
   height: auto; }
 
 .wrapper {
-  height: 100vh;
+  height: calc(100vh - 6.99rem);
   width: 100%;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.8); }
   .wrapper header {
-    height: calc(100vh - 7rem); }
+    height: calc(100vh - 6.99rem); }
 
 main {
+  height: auto;
   width: 100%;
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
   main .slide {
     width: 100%;
     height: auto;
-    margin-bottom: 100%;
-    padding-top: 5%; }
+    margin-bottom: 50vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; }
+    main .slide div {
+      width: 100%; }
     main .slide h1 {
       margin: 3rem auto;
       font-size: 4rem;
@@ -92,14 +102,14 @@ main {
       color: #ccc;
       text-shadow: 0 0.1rem 0 #000; }
 
-#home div {
+#home div div {
   width: 15rem;
   height: 15rem;
   margin: auto;
   margin-bottom: 1rem;
   box-shadow: 0 0 1rem #000;
   border-radius: 50%; }
-  #home div img {
+  #home div div img {
     width: 100%;
     height: auto; }
 
@@ -142,6 +152,158 @@ main {
       height: auto;
       margin: auto;
       cursor: pointer; }
+    #discography table thead tr td #hidden-button-popup-1, #discography table thead tr th #hidden-button-popup-1, #discography table tbody tr td #hidden-button-popup-1, #discography table tbody tr th #hidden-button-popup-1 {
+      display: none; }
+    #discography table thead tr td .popup-1, #discography table thead tr th .popup-1, #discography table tbody tr td .popup-1, #discography table tbody tr th .popup-1 {
+      position: absolute;
+      display: none;
+      top: calc(50% - 16rem);
+      left: calc(50% - 15rem);
+      width: 30rem;
+      height: 32rem;
+      padding: 1rem;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+      background-color: crimson;
+      color: #222;
+      box-shadow: 0 0 1rem #000;
+      z-index: 1000; }
+      #discography table thead tr td .popup-1 .tapa, #discography table thead tr th .popup-1 .tapa, #discography table tbody tr td .popup-1 .tapa, #discography table tbody tr th .popup-1 .tapa {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem; }
+      #discography table thead tr td .popup-1 label, #discography table thead tr th .popup-1 label, #discography table tbody tr td .popup-1 label, #discography table tbody tr th .popup-1 label {
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+        #discography table thead tr td .popup-1 label .icon, #discography table thead tr th .popup-1 label .icon, #discography table tbody tr td .popup-1 label .icon, #discography table tbody tr th .popup-1 label .icon {
+          font-size: 2rem;
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          background: #222;
+          color: crimson;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 0 1rem #000; }
+    #discography table thead tr td #hidden-button-popup-1:checked + .popup-1, #discography table thead tr th #hidden-button-popup-1:checked + .popup-1, #discography table tbody tr td #hidden-button-popup-1:checked + .popup-1, #discography table tbody tr th #hidden-button-popup-1:checked + .popup-1 {
+      display: block; }
+    #discography table thead tr td #hidden-button-popup-2, #discography table thead tr th #hidden-button-popup-2, #discography table tbody tr td #hidden-button-popup-2, #discography table tbody tr th #hidden-button-popup-2 {
+      display: none; }
+    #discography table thead tr td .popup-2, #discography table thead tr th .popup-2, #discography table tbody tr td .popup-2, #discography table tbody tr th .popup-2 {
+      position: absolute;
+      display: none;
+      top: calc(50% - 16rem);
+      left: calc(50% - 15rem);
+      width: 30rem;
+      height: 32rem;
+      padding: 1rem;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+      background-color: crimson;
+      color: #222;
+      box-shadow: 0 0 1rem #000;
+      z-index: 1000; }
+      #discography table thead tr td .popup-2 .tapa, #discography table thead tr th .popup-2 .tapa, #discography table tbody tr td .popup-2 .tapa, #discography table tbody tr th .popup-2 .tapa {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem; }
+      #discography table thead tr td .popup-2 label, #discography table thead tr th .popup-2 label, #discography table tbody tr td .popup-2 label, #discography table tbody tr th .popup-2 label {
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+        #discography table thead tr td .popup-2 label .icon, #discography table thead tr th .popup-2 label .icon, #discography table tbody tr td .popup-2 label .icon, #discography table tbody tr th .popup-2 label .icon {
+          font-size: 2rem;
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          background: #222;
+          color: crimson;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 0 1rem #000; }
+    #discography table thead tr td #hidden-button-popup-2:checked + .popup-2, #discography table thead tr th #hidden-button-popup-2:checked + .popup-2, #discography table tbody tr td #hidden-button-popup-2:checked + .popup-2, #discography table tbody tr th #hidden-button-popup-2:checked + .popup-2 {
+      display: block; }
+    #discography table thead tr td #hidden-button-popup-3, #discography table thead tr th #hidden-button-popup-3, #discography table tbody tr td #hidden-button-popup-3, #discography table tbody tr th #hidden-button-popup-3 {
+      display: none; }
+    #discography table thead tr td .popup-3, #discography table thead tr th .popup-3, #discography table tbody tr td .popup-3, #discography table tbody tr th .popup-3 {
+      position: absolute;
+      display: none;
+      top: calc(50% - 16rem);
+      left: calc(50% - 15rem);
+      width: 30rem;
+      height: 32rem;
+      padding: 1rem;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+      background-color: crimson;
+      color: #222;
+      box-shadow: 0 0 1rem #000;
+      z-index: 1000; }
+      #discography table thead tr td .popup-3 .tapa, #discography table thead tr th .popup-3 .tapa, #discography table tbody tr td .popup-3 .tapa, #discography table tbody tr th .popup-3 .tapa {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem; }
+      #discography table thead tr td .popup-3 label, #discography table thead tr th .popup-3 label, #discography table tbody tr td .popup-3 label, #discography table tbody tr th .popup-3 label {
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+        #discography table thead tr td .popup-3 label .icon, #discography table thead tr th .popup-3 label .icon, #discography table tbody tr td .popup-3 label .icon, #discography table tbody tr th .popup-3 label .icon {
+          font-size: 2rem;
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          background: #222;
+          color: crimson;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 0 1rem #000; }
+    #discography table thead tr td #hidden-button-popup-3:checked + .popup-3, #discography table thead tr th #hidden-button-popup-3:checked + .popup-3, #discography table tbody tr td #hidden-button-popup-3:checked + .popup-3, #discography table tbody tr th #hidden-button-popup-3:checked + .popup-3 {
+      display: block; }
+    #discography table thead tr td #hidden-button-popup-4, #discography table thead tr th #hidden-button-popup-4, #discography table tbody tr td #hidden-button-popup-4, #discography table tbody tr th #hidden-button-popup-4 {
+      display: none; }
+    #discography table thead tr td .popup-4, #discography table thead tr th .popup-4, #discography table tbody tr td .popup-4, #discography table tbody tr th .popup-4 {
+      position: absolute;
+      display: none;
+      top: calc(50% - 16rem);
+      left: calc(50% - 15rem);
+      width: 30rem;
+      height: 32rem;
+      padding: 1rem;
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+      background-color: crimson;
+      color: #222;
+      box-shadow: 0 0 1rem #000;
+      z-index: 1000; }
+      #discography table thead tr td .popup-4 .tapa, #discography table thead tr th .popup-4 .tapa, #discography table tbody tr td .popup-4 .tapa, #discography table tbody tr th .popup-4 .tapa {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.5rem; }
+      #discography table thead tr td .popup-4 label, #discography table thead tr th .popup-4 label, #discography table tbody tr td .popup-4 label, #discography table tbody tr th .popup-4 label {
+        position: absolute;
+        bottom: 0;
+        right: 0; }
+        #discography table thead tr td .popup-4 label .icon, #discography table thead tr th .popup-4 label .icon, #discography table tbody tr td .popup-4 label .icon, #discography table tbody tr th .popup-4 label .icon {
+          font-size: 2rem;
+          height: 3rem;
+          width: 3rem;
+          border-radius: 50%;
+          background: #222;
+          color: crimson;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 0 1rem #000; }
+    #discography table thead tr td #hidden-button-popup-4:checked + .popup-4, #discography table thead tr th #hidden-button-popup-4:checked + .popup-4, #discography table tbody tr td #hidden-button-popup-4:checked + .popup-4, #discography table tbody tr th #hidden-button-popup-4:checked + .popup-4 {
+      display: block; }
   #discography table thead tr:nth-child(odd), #discography table tbody tr:nth-child(odd) {
     background: #222;
     color: crimson; }
@@ -155,8 +317,74 @@ main {
     background: crimson;
     color: #222; }
 
+#contact {
+  height: calc(100vh - 17rem);
+  margin-bottom: 0;
+  justify-content: start; }
+  #contact form {
+    max-width: 50rem;
+    margin: 0 auto; }
+  #contact .input-text, #contact .input-select, #contact .button {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    text-transform: uppercase;
+    box-shadow: 0 0 1rem #000; }
+  #contact .input-text {
+    border: 0.1rem solid #aaa; }
+  #contact .genero {
+    text-align: center;
+    padding: 0.5rem;
+    color: #ccc; }
+    #contact .genero .radio {
+      display: inline-block;
+      position: relative;
+      padding-left: 22px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; }
+      #contact .genero .radio input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer; }
+      #contact .genero .radio .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: #eee;
+        border-radius: 50%; }
+      #contact .genero .radio:hover input ~ .checkmark {
+        background-color: #ccc; }
+      #contact .genero .radio input:checked ~ .checkmark {
+        background-color: crimson; }
+      #contact .genero .radio .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none; }
+      #contact .genero .radio input:checked ~ .checkmark:after {
+        display: block; }
+      #contact .genero .radio .checkmark:after {
+        top: 5px;
+        left: 5px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #222; }
+  #contact .input-select {
+    color: #222; }
+  #contact .button {
+    background-color: crimson;
+    color: #222;
+    border: none;
+    border: 0.1rem solid red; }
+
 footer {
-  height: 16rem;
+  height: 10rem;
   padding: 2rem 2rem 0 2rem;
   background: #222;
   color: crimson;
@@ -217,18 +445,16 @@ footer {
           .stiky-bar nav ol a li .icon, .stiky-bar nav ol label li .icon {
             font-size: 3rem;
             width: 100%; }
-  .stiky-bar #hidden-button:checked + ol {
-    display: flex; }
+    .stiky-bar nav #hidden-button:checked + ol {
+      display: flex; }
 
-@media (min-width: 25em) {
+@media (min-width: 26em) {
   body {
     background: url("../img/bg.jpg") no-repeat center 0 fixed;
     background-size: cover; }
   main {
     padding: 0 3rem; }
-    main .slide {
-      height: auto; }
-  #home div {
+  #home div div {
     width: 15rem;
     height: 15rem;
     margin: 5rem auto; }
@@ -249,6 +475,9 @@ footer {
         grid-area: image3; }
       #about .integrantes .column:nth-child(4) {
         grid-area: image4; }
+  #contact {
+    margin-bottom: 0;
+    justify-content: center; }
   .stiky-bar nav .ham-icon {
     display: none; }
   .stiky-bar nav .logo {
@@ -264,8 +493,8 @@ footer {
     .stiky-bar nav ol a, .stiky-bar nav ol label {
       height: 7rem;
       width: auto;
-      padding: 0.5rem 1rem 0.5rem 1rem;
-      font-size: 1.3rem;
+      padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+      font-size: 1rem;
       font-weight: 900;
       color: #222;
       background-color: crimson; }
@@ -282,25 +511,85 @@ footer {
     display: block; } }
 
 @media (min-width: 60em) {
-  .wrapper {
-    height: calc(100% - 7rem); }
   main {
     padding: 0 10rem; }
-  #home div {
+    main .slide {
+      height: calc(100vh - 7rem);
+      min-height: 70rem;
+      max-width: 120rem;
+      margin-bottom: 0;
+      padding-top: 0; }
+  #home div div {
     width: 25rem;
-    height: 25rem;
-    margin: 5rem auto; }
+    height: 25rem; }
   #about .integrantes {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "image1 image2 image3 image4"; }
     #about .integrantes .column .foto {
       width: 15rem;
       height: auto; }
+  #discography table thead tr td, #discography table thead tr th, #discography table tbody tr td, #discography table tbody tr th {
+    text-align: center;
+    padding: 1rem; }
+    #discography table thead tr td .disco, #discography table thead tr th .disco, #discography table tbody tr td .disco, #discography table tbody tr th .disco {
+      width: 6rem;
+      height: auto;
+      margin: auto;
+      cursor: pointer; }
+    #discography table thead tr td .popup-1, #discography table thead tr th .popup-1, #discography table tbody tr td .popup-1, #discography table tbody tr th .popup-1 {
+      top: calc(50% - 31rem);
+      left: calc(50% - 30rem);
+      width: 60rem;
+      height: 62rem;
+      padding: 1rem; }
+      #discography table thead tr td .popup-1 .tapa, #discography table thead tr th .popup-1 .tapa, #discography table tbody tr td .popup-1 .tapa, #discography table tbody tr th .popup-1 .tapa {
+        margin-bottom: 0.5rem; }
+      #discography table thead tr td .popup-1 label .icon, #discography table thead tr th .popup-1 label .icon, #discography table tbody tr td .popup-1 label .icon, #discography table tbody tr th .popup-1 label .icon {
+        font-size: 2rem;
+        height: 3rem;
+        width: 3rem; }
+    #discography table thead tr td .popup-2, #discography table thead tr th .popup-2, #discography table tbody tr td .popup-2, #discography table tbody tr th .popup-2 {
+      top: calc(50% - 31rem);
+      left: calc(50% - 30rem);
+      width: 60rem;
+      height: 62rem;
+      padding: 1rem; }
+      #discography table thead tr td .popup-2 .tapa, #discography table thead tr th .popup-2 .tapa, #discography table tbody tr td .popup-2 .tapa, #discography table tbody tr th .popup-2 .tapa {
+        margin-bottom: 0.5rem; }
+      #discography table thead tr td .popup-2 label .icon, #discography table thead tr th .popup-2 label .icon, #discography table tbody tr td .popup-2 label .icon, #discography table tbody tr th .popup-2 label .icon {
+        font-size: 2rem;
+        height: 3rem;
+        width: 3rem; }
+    #discography table thead tr td .popup-3, #discography table thead tr th .popup-3, #discography table tbody tr td .popup-3, #discography table tbody tr th .popup-3 {
+      top: calc(50% - 31rem);
+      left: calc(50% - 30rem);
+      width: 60rem;
+      height: 62rem;
+      padding: 1rem; }
+      #discography table thead tr td .popup-3 .tapa, #discography table thead tr th .popup-3 .tapa, #discography table tbody tr td .popup-3 .tapa, #discography table tbody tr th .popup-3 .tapa {
+        margin-bottom: 0.5rem; }
+      #discography table thead tr td .popup-3 label .icon, #discography table thead tr th .popup-3 label .icon, #discography table tbody tr td .popup-3 label .icon, #discography table tbody tr th .popup-3 label .icon {
+        font-size: 2rem;
+        height: 3rem;
+        width: 3rem; }
+    #discography table thead tr td .popup-4, #discography table thead tr th .popup-4, #discography table tbody tr td .popup-4, #discography table tbody tr th .popup-4 {
+      top: calc(50% - 31rem);
+      left: calc(50% - 30rem);
+      width: 60rem;
+      height: 62rem;
+      padding: 1rem; }
+      #discography table thead tr td .popup-4 .tapa, #discography table thead tr th .popup-4 .tapa, #discography table tbody tr td .popup-4 .tapa, #discography table tbody tr th .popup-4 .tapa {
+        margin-bottom: 0.5rem; }
+      #discography table thead tr td .popup-4 label .icon, #discography table thead tr th .popup-4 label .icon, #discography table tbody tr td .popup-4 label .icon, #discography table tbody tr th .popup-4 label .icon {
+        font-size: 2rem;
+        height: 3rem;
+        width: 3rem; }
   .stiky-bar nav .ham-icon {
     display: none; }
   .stiky-bar nav .logo {
     width: 15rem; }
   .stiky-bar nav ol a, .stiky-bar nav ol label {
+    padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 1.9rem; }
     .stiky-bar nav ol a li, .stiky-bar nav ol label li {
       text-align: center; }

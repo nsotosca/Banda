@@ -1,11 +1,22 @@
 main{
+    height: auto;
     width: 100%;
     padding: 0 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     .slide{
         width: 100%;
         height: auto;
-        margin-bottom: 100%;
-        padding-top: 5%;
+        margin-bottom: 50vh;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        div{
+            width: 100%;
+        }
         h1{
             margin:3rem auto;
             font-size: 4rem;
@@ -34,15 +45,17 @@ main{
 
 #home{
     div{
-        width: 15rem;
-        height: 15rem;
-        margin:auto;
-        margin-bottom:1rem;
-        box-shadow: $sombra;
-        border-radius: 50%;
-        img{
-            width: 100%;
-            height: auto;
+        div{
+            width: 15rem;
+            height: 15rem;
+            margin:auto;
+            margin-bottom:1rem;
+            box-shadow: $sombra;
+            border-radius: 50%;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
     }
 }
@@ -98,6 +111,52 @@ main{
                         margin: auto;
                         cursor: pointer;
                     }
+                    @for $i from 1 through 4{
+                        #hidden-button-popup-#{$i}{
+                            display:none;
+                        }
+                        .popup-#{$i}{
+                            position: absolute;
+                            display: none;
+                            top:calc(50% - 16rem);
+                            left:calc(50% - 15rem);
+                            width: 30rem;
+                            height: 32rem;
+                            padding: 1rem;
+                            text-align: center;
+                            font-style: italic;
+                            font-weight: bold;
+                            background-color: $primary-color;
+                            color:$third-color;
+                            box-shadow: $sombra;
+                            z-index: 1000;
+                            .tapa{
+                                width: 100%;
+                                height: auto;
+                                margin-bottom: 0.5rem;
+                            }
+                            label {
+                                position: absolute;
+                                bottom:0;
+                                right: 0;
+                                .icon{
+                                    font-size: 2rem; 
+                                    height:3rem;
+                                    width:3rem; 
+                                    border-radius: 50%; 
+                                    background: $third-color;
+                                    color:$primary-color;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    box-shadow: $sombra;
+                                }
+                            }
+                        }
+                        #hidden-button-popup-#{$i}:checked + .popup-#{$i} {
+                            display: block;
+                        }
+                    }
                 }
                 &:nth-child(odd){
                     background:#222;
@@ -119,5 +178,82 @@ main{
                 color:$third-color;
             }
         }
+    }
+}
+#contact{
+    height: calc(100vh - 17rem);
+    margin-bottom: 0;
+    justify-content: start;
+    form{max-width: 50rem;margin: 0 auto;}
+    .input-text,.input-select,.button{
+        width: 100%;
+        height: 4rem;
+        padding:1rem;
+        margin:0.5rem auto;
+        text-transform: uppercase;
+        box-shadow: $sombra;
+    }
+    .input-text{
+        border: 0.1rem solid #aaa;
+    }
+    .genero{
+        text-align: center;
+        padding: 0.5rem;
+        color:$secundary-color;
+        .radio {
+            display: inline-block;
+            position: relative;
+            padding-left: 22px;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 1.5rem;
+                width: 1.5rem;
+                background-color: #eee;
+                border-radius: 50%;
+            }
+            &:hover input ~ .checkmark {
+                background-color: #ccc;
+            }
+            input:checked ~ .checkmark {
+                background-color: $primary-color;
+            }
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            input:checked ~ .checkmark:after {
+                display: block;
+            }
+            .checkmark:after {
+                top: 5px;
+                left: 5px;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: $third-color;
+            }
+        }
+    }   
+    .input-select{
+        color:$third-color;
+    }
+    .button{
+        background-color:$primary-color;
+        color: $third-color;
+        border:none;
+        border: 0.1rem solid red;
     }
 }

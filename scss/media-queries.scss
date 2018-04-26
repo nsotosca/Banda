@@ -1,19 +1,18 @@
-@media (min-width: 25em){
+@media (min-width: 26em){
 	body{
-        background:$bg-desktop;
+        background:$bg;
         background-size: cover;
     }
     main{
         padding: 0 3rem;
-        .slide{
-            height: auto;
-        }
     }
     #home{
         div{
-            width: 15rem;
-            height: 15rem;
-            margin:5rem auto;
+            div{
+                width: 15rem;
+                height: 15rem;
+                margin:5rem auto;
+            }
         }
     }
     #about{
@@ -42,6 +41,10 @@
             }
         }      
     }
+    #contact{
+        margin-bottom:0;
+        justify-content: center; 
+    }
     .stiky-bar{     
         nav{
             .ham-icon{display:none;}
@@ -57,8 +60,8 @@
                 a,label{
                     height: 7rem;
                     width: auto;
-                    padding: 0.5rem 1rem 0.5rem 1rem;
-                    font-size: 1.3rem;
+                    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+                    font-size: 1rem;
                     font-weight: 900;
                     color:$third-color;
                     background-color:$primary-color;
@@ -83,17 +86,22 @@
 }
 
 @media (min-width: 60em){
-    .wrapper {
-        height: calc(100% - 7rem);
-    }
     main{
         padding: 0 10rem;
+        .slide{
+            height: calc(100vh - 7rem);
+            min-height: 70rem;
+            max-width: 120rem;
+            margin-bottom:0;
+            padding-top: 0;
+        }
     }
     #home{
         div{
-            width: 25rem;
-            height: 25rem;
-            margin:5rem auto;
+            div{
+                width: 25rem;
+                height: 25rem;
+            }
         }
     }
     #about{
@@ -108,6 +116,43 @@
             }
         }      
     }
+    #discography{
+        table{
+            thead,tbody{
+                tr{
+                    td,th{                    
+                        text-align: center;
+                        padding: 1rem;
+                        .disco{
+                            width: 6rem;
+                            height: auto;
+                            margin: auto;
+                            cursor: pointer;
+                        }
+                        @for $i from 1 through 4{
+                            .popup-#{$i}{
+                                top:calc(50% - 31rem);
+                                left:calc(50% - 30rem);
+                                width: 60rem;
+                                height: 62rem;
+                                padding: 1rem;
+                                .tapa{
+                                    margin-bottom: 0.5rem;
+                                }
+                                label {
+                                    .icon{
+                                        font-size: 2rem; 
+                                        height:3rem;
+                                        width:3rem; 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }             
+            }
+        }
+    }
     .stiky-bar{
         nav{
             .ham-icon{
@@ -116,6 +161,7 @@
             .logo{width: 15rem;}
             ol{      
                 a,label{
+                    padding: 0.5rem 1rem 0.5rem 1rem;
                     font-size: 1.9rem;
                     li{
                         text-align: center;
