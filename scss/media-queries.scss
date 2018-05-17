@@ -3,6 +3,12 @@
         background:$bg;
         background-size: cover;
     }
+    header{
+        .ns-w-100 {
+            width: 100% !important;
+            height: auto !important;
+        }
+    }
     main{
         padding: 0 3rem;
     }
@@ -57,7 +63,7 @@
                 justify-content: center;
                 align-items: center;     
                 background: none;           
-                a,label{
+                li{
                     height: 7rem;
                     width: auto;
                     padding: 0.5rem 0.3rem 0.5rem 0.3rem;
@@ -65,18 +71,26 @@
                     font-weight: 900;
                     color:$third-color;
                     background-color:$primary-color;
-                    li{
+                    a,label{
                         text-align: center;
+                        height: 7rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color:$third-color !important;
                         .icon{
                             display:none;
                         }
+                        &:hover{
+                            color:$primary-color !important;
+                            background: $third-color;
+                            text-decoration: none;
+                        }
                     } 
-                    &:hover{
-                        color:$primary-color;
-                        background: $third-color;
-                    }
+                    
+                    label{display: none;} 
                 }    
-                label{display: none;} 
+               
             }
         }
         #hidden-button:checked + nav {
@@ -144,6 +158,7 @@
                                         font-size: 2rem; 
                                         height:3rem;
                                         width:3rem; 
+                                        cursor: pointer
                                     }
                                 }
                             }
@@ -160,10 +175,10 @@
             }
             .logo{width: 15rem;}
             ol{      
-                a,label{
-                    padding: 0.5rem 1rem 0.5rem 1rem;
+                li{
+                    // padding: 0.5rem 1rem 0.5rem 1rem;
                     font-size: 1.9rem;
-                    li{
+                    a,label{
                         text-align: center;
                         .icon{
                             display:none;

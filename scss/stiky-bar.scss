@@ -37,7 +37,7 @@
             display: none;    
             flex-flow: row wrap;
             background-color: $b-transparent;
-                a, label{
+               li{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -49,10 +49,14 @@
                 font-weight: 700;
                 text-shadow: 0 0.1rem 0 red;
                 color:$primary-color;
-                background-color:$third-color;
+                background-color:$third-color ;
                 text-transform: uppercase; 
-                li{
+                a, label{
+                    width: 100%;
+                    height: auto;
                     text-align: center;
+                    text-decoration: none;
+                    color:$primary-color !important;
                     .icon{
                         font-size: 3rem;
                         width: 100%;
